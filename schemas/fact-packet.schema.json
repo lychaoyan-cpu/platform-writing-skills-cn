@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lychaoyan-cpu/platform-writing-skills-cn/schemas/fact-packet.schema.json",
+  "title": "Platform Writing Fact Packet",
+  "type": "object",
+  "required": ["schema_version", "packet_id", "facts"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "packet_id": {"type": "string", "minLength": 1},
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["fact_id", "claim", "evidence_status", "public_status", "sources"],
+        "properties": {
+          "fact_id": {"type": "string", "minLength": 1},
+          "claim": {"type": "string", "minLength": 1},
+          "conditions": {"type": "array", "items": {"type": "string"}},
+          "as_of": {"type": ["string", "null"], "format": "date"},
+          "evidence_status": {"enum": ["VERIFIED_PRIMARY", "VERIFIED_SECONDARY", "USER_PROVIDED", "INFERENCE", "UNKNOWN"]},
+          "public_status": {"enum": ["PUBLIC_ALLOWED", "DRAFT_ONLY", "PENDING", "CONFLICT", "BLOCKED"]},
+          "organization_scope": {"type": ["string", "null"]},
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source_id", "title", "supports"],
+              "properties": {
+                "source_id": {"type": "string", "minLength": 1},
+                "title": {"type": "string", "minLength": 1},
+                "url": {"type": ["string", "null"]},
+                "supports": {"type": "array", "items": {"type": "string"}}
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

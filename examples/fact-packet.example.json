@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "packet_id": "example-template",
+  "facts": [
+    {
+      "fact_id": "FACT-PLACEHOLDER-001",
+      "claim": "${VERIFIABLE_CLAIM}",
+      "conditions": ["${APPLICABLE_CONDITION}"],
+      "as_of": null,
+      "evidence_status": "UNKNOWN",
+      "public_status": "DRAFT_ONLY",
+      "organization_scope": null,
+      "sources": [
+        {
+          "source_id": "SOURCE-PLACEHOLDER-001",
+          "title": "${SOURCE_TITLE}",
+          "url": null,
+          "supports": ["${SUPPORTED_PART_OF_CLAIM}"]
+        }
+      ]
+    }
+  ]
+}

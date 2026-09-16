@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文多平台写作总编"
+  short_description: "统一项目事实与来源证据，协调平台专属写作、品牌表达和逐稿审查"
+  default_prompt: "使用 $platform-writing-orchestrator 为指定平台组织具备证据约束的中文内容。"

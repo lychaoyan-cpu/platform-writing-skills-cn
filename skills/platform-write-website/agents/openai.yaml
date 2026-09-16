@@ -1,0 +1,4 @@
+interface:
+  display_name: "官网知识库写作"
+  short_description: "面向官网知识库组织中文行业内容，核对事实、来源、商业关系和平台字段"
+  default_prompt: "使用 $platform-write-website 根据已有事实与来源资料撰写官网知识库版本。"

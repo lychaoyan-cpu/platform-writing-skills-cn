@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "platforms": [
+    {"id": "dayu", "label": "大鱼号", "skill": "platform-write-dayu"},
+    {"id": "wechat", "label": "微信公众号", "skill": "platform-write-wechat"},
+    {"id": "zhihu", "label": "知乎", "skill": "platform-write-zhihu"},
+    {"id": "xiaohongshu", "label": "小红书", "skill": "platform-write-xiaohongshu"},
+    {"id": "toutiao", "label": "头条号", "skill": "platform-write-toutiao"},
+    {"id": "baijiahao", "label": "百家号", "skill": "platform-write-baijiahao"},
+    {"id": "sohu", "label": "搜狐号", "skill": "platform-write-sohu"},
+    {"id": "netease", "label": "网易号", "skill": "platform-write-netease"},
+    {"id": "qq-media", "label": "企鹅号", "skill": "platform-write-qq-media"},
+    {"id": "weibo", "label": "微博", "skill": "platform-write-weibo"},
+    {"id": "douyin", "label": "抖音", "skill": "platform-write-douyin"},
+    {"id": "kuaishou", "label": "快手", "skill": "platform-write-kuaishou"},
+    {"id": "channels", "label": "视频号", "skill": "platform-write-channels"},
+    {"id": "bilibili", "label": "哔哩哔哩", "skill": "platform-write-bilibili"},
+    {"id": "csdn", "label": "CSDN", "skill": "platform-write-csdn"},
+    {"id": "website", "label": "官网知识库", "skill": "platform-write-website"}
+  ]
+}

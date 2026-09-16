@@ -1,0 +1,17 @@
+# Template only. Replace variables with verified project data.
+schema_version: "1.0"
+organization:
+  display_name: "${ORGANIZATION_DISPLAY_NAME}"
+  legal_name: null
+  identity_status: PENDING
+  brands:
+    - "${BRAND_NAME}"
+content:
+  language: "zh-CN"
+  target_audiences:
+    - "${TARGET_AUDIENCE}"
+  blocked_claims:
+    - "唯一"
+    - "第一"
+    - "最先进"
+  evidence_directory: null

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lychaoyan-cpu/platform-writing-skills-cn/schemas/project-profile.schema.json",
+  "title": "Platform Writing Project Profile",
+  "type": "object",
+  "required": ["schema_version", "organization", "content"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "organization": {
+      "type": "object",
+      "required": ["display_name", "identity_status"],
+      "properties": {
+        "display_name": {"type": "string", "minLength": 1},
+        "legal_name": {"type": ["string", "null"]},
+        "identity_status": {"enum": ["VERIFIED", "USER_PROVIDED", "PENDING", "CONFLICT"]},
+        "brands": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "additionalProperties": false
+    },
+    "content": {
+      "type": "object",
+      "required": ["language", "target_audiences", "blocked_claims"],
+      "properties": {
+        "language": {"type": "string", "minLength": 1},
+        "target_audiences": {"type": "array", "items": {"type": "string"}},
+        "blocked_claims": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "evidence_directory": {"type": ["string", "null"], "description": "Repository-relative path only."}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

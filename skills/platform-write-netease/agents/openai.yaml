@@ -1,0 +1,4 @@
+interface:
+  display_name: "网易号写作"
+  short_description: "面向网易号组织中文行业内容，核对事实、来源、商业关系和平台字段"
+  default_prompt: "使用 $platform-write-netease 根据已有事实与来源资料撰写网易号版本。"

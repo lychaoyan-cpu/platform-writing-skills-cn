@@ -1,0 +1,14 @@
+{
+  "project": "platform-writing-skills-cn",
+  "version": "1.0.0",
+  "license": "MIT",
+  "orchestrator": "platform-writing-orchestrator",
+  "source_release": {
+    "version": "1.0.0",
+    "skill_count": 17,
+    "declared_file_count": 46,
+    "on_disk_file_count": 47,
+    "source_manifest_sha256": "ecaa3b38ef411a6acd07b8ce4ffd80e2018365b5c39656798c3d9e0aaf4d94d6",
+    "source_tree_sha256": "fdfe16c44c578f35bc7f0e84489c701a60a77614c9bcb0e17e48af1da813ad2a"
+  }
+}

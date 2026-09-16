@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lychaoyan-cpu/platform-writing-skills-cn/schemas/manifest.schema.json",
+  "title": "Platform Writing Skills Manifest",
+  "type": "object",
+  "required": ["schema_version", "project", "version", "license", "skill_count", "platform_count", "source_release", "skills", "file_count", "files"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project": {"const": "platform-writing-skills-cn"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "license": {"const": "MIT"},
+    "skill_count": {"type": "integer", "minimum": 1},
+    "platform_count": {"type": "integer", "minimum": 1},
+    "source_release": {"type": "object"},
+    "skills": {"type": "array", "items": {"type": "object"}},
+    "file_count": {"type": "integer", "minimum": 1},
+    "files": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": false
+}

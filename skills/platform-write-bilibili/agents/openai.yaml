@@ -1,0 +1,4 @@
+interface:
+  display_name: "哔哩哔哩写作"
+  short_description: "面向哔哩哔哩组织中文行业内容，核对事实、来源、商业关系和平台字段"
+  default_prompt: "使用 $platform-write-bilibili 根据已有事实与来源资料撰写哔哩哔哩版本。"

@@ -1,0 +1,453 @@
+{
+  "schema_version": "1.0",
+  "project": "platform-writing-skills-cn",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skill_count": 17,
+  "platform_count": 16,
+  "source_release": {
+    "version": "1.0.0",
+    "skill_count": 17,
+    "declared_file_count": 46,
+    "on_disk_file_count": 47,
+    "source_manifest_sha256": "ecaa3b38ef411a6acd07b8ce4ffd80e2018365b5c39656798c3d9e0aaf4d94d6",
+    "source_tree_sha256": "fdfe16c44c578f35bc7f0e84489c701a60a77614c9bcb0e17e48af1da813ad2a"
+  },
+  "skills": [
+    {
+      "name": "platform-write-baijiahao",
+      "type": "platform",
+      "platform_id": "baijiahao",
+      "path": "skills/platform-write-baijiahao"
+    },
+    {
+      "name": "platform-write-bilibili",
+      "type": "platform",
+      "platform_id": "bilibili",
+      "path": "skills/platform-write-bilibili"
+    },
+    {
+      "name": "platform-write-channels",
+      "type": "platform",
+      "platform_id": "channels",
+      "path": "skills/platform-write-channels"
+    },
+    {
+      "name": "platform-write-csdn",
+      "type": "platform",
+      "platform_id": "csdn",
+      "path": "skills/platform-write-csdn"
+    },
+    {
+      "name": "platform-write-dayu",
+      "type": "platform",
+      "platform_id": "dayu",
+      "path": "skills/platform-write-dayu"
+    },
+    {
+      "name": "platform-write-douyin",
+      "type": "platform",
+      "platform_id": "douyin",
+      "path": "skills/platform-write-douyin"
+    },
+    {
+      "name": "platform-write-kuaishou",
+      "type": "platform",
+      "platform_id": "kuaishou",
+      "path": "skills/platform-write-kuaishou"
+    },
+    {
+      "name": "platform-write-netease",
+      "type": "platform",
+      "platform_id": "netease",
+      "path": "skills/platform-write-netease"
+    },
+    {
+      "name": "platform-write-qq-media",
+      "type": "platform",
+      "platform_id": "qq-media",
+      "path": "skills/platform-write-qq-media"
+    },
+    {
+      "name": "platform-write-sohu",
+      "type": "platform",
+      "platform_id": "sohu",
+      "path": "skills/platform-write-sohu"
+    },
+    {
+      "name": "platform-write-toutiao",
+      "type": "platform",
+      "platform_id": "toutiao",
+      "path": "skills/platform-write-toutiao"
+    },
+    {
+      "name": "platform-write-website",
+      "type": "platform",
+      "platform_id": "website",
+      "path": "skills/platform-write-website"
+    },
+    {
+      "name": "platform-write-wechat",
+      "type": "platform",
+      "platform_id": "wechat",
+      "path": "skills/platform-write-wechat"
+    },
+    {
+      "name": "platform-write-weibo",
+      "type": "platform",
+      "platform_id": "weibo",
+      "path": "skills/platform-write-weibo"
+    },
+    {
+      "name": "platform-write-xiaohongshu",
+      "type": "platform",
+      "platform_id": "xiaohongshu",
+      "path": "skills/platform-write-xiaohongshu"
+    },
+    {
+      "name": "platform-write-zhihu",
+      "type": "platform",
+      "platform_id": "zhihu",
+      "path": "skills/platform-write-zhihu"
+    },
+    {
+      "name": "platform-writing-orchestrator",
+      "type": "orchestrator",
+      "platform_id": null,
+      "path": "skills/platform-writing-orchestrator"
+    }
+  ],
+  "file_count": 66,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 87,
+      "sha256": "6cf073ee8c7878bfa005964f40a979a5ce09301322c051c08e5419e0344f8411"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 508,
+      "sha256": "7eb05251ab418727495aef9fa14f61996167e388d2ca6bfaa8daf8c95d303ac6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 195,
+      "sha256": "ddee13de931a173a40d37599f4d8e2d2681f88fa88c4a32d840115fe441593ef"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1294,
+      "sha256": "9aa73eb0c0b93ebaf594e3610d1c48c182f47955d9cd7fe6cde444517fdd8d16"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 760,
+      "sha256": "733ccf36211968302fd67bdeed296ae24ca319cb6cc06fda0d8eb050fd988537"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1254,
+      "sha256": "a0c163642bd1a29f9261d52d65375fddc581b518cb4c3b81f224e75d38de73cb"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "e3dc622ae01cf2c70027c72dcf7fcd9358144e8bb1c9b066263cc25de776cfe5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4105,
+      "sha256": "fb53604d117261b09c09ef34f43795b312fde226b734251568a6ae22dbf6d03c"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 5711,
+      "sha256": "7b62b5411b867b9c1ed0d1e9a167ef1c01aa3c947fc8cbcfcb3765dd8b3ad373"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 983,
+      "sha256": "ee0b8607fe7096aa5f2cdffaa4a7d2374d1a911553ce1799c641d51a40e5bfdf"
+    },
+    {
+      "path": "config/platforms.json",
+      "bytes": 1319,
+      "sha256": "ea847f3497772168d0072296e88edcb8e1493e0c2e668194510222dedcf8622e"
+    },
+    {
+      "path": "config/repository.json",
+      "bytes": 465,
+      "sha256": "dab27c75dd7b7656668007707388bea263aa880bd3860505a606bac0e2f6bc21"
+    },
+    {
+      "path": "docs/adding-platform.md",
+      "bytes": 1532,
+      "sha256": "fbb4ab1034d2e19ca2eb4325e0df200fca87f3e3789c46f83dc63b8054aa8d34"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 1537,
+      "sha256": "8d662859ad5fcd451a0047e821e5bd6f03fc114f0ffeba1011b35908c887f380"
+    },
+    {
+      "path": "docs/manifest.md",
+      "bytes": 801,
+      "sha256": "40db0649557e4bc731cebd6ca0460501cd58e8817e0c41acf845e328c1439937"
+    },
+    {
+      "path": "docs/releases/v1.0.0.md",
+      "bytes": 1347,
+      "sha256": "22bb4dcc0e86f2548f98e72cf3b37d1e32d6e238381719a9649684112ae9a329"
+    },
+    {
+      "path": "docs/security-audit.md",
+      "bytes": 2040,
+      "sha256": "4c799a29eb558abd1453a94eca03cdc7be4f6c2aa7c8e182af474e4b6507f5bc"
+    },
+    {
+      "path": "examples/fact-packet.example.json",
+      "bytes": 561,
+      "sha256": "39ea9fa84a4d42833561abda399a3882d894ed1abe3646400c49a2f2077cb564"
+    },
+    {
+      "path": "examples/project-profile.example.yaml",
+      "bytes": 393,
+      "sha256": "9ecde241abc06d38888e840d889ed6b0f1f9d2b58047b184c5d12b6896f9878f"
+    },
+    {
+      "path": "examples/request.example.md",
+      "bytes": 560,
+      "sha256": "3c146c2a2decdb28f6219257abdebd85f2ed0bd0325dc4d04447e23b3c944d40"
+    },
+    {
+      "path": "schemas/fact-packet.schema.json",
+      "bytes": 1775,
+      "sha256": "4edbd392cc55fafaefc2629868f8dbe0cef6a5509689709a04b9c8ffb864f044"
+    },
+    {
+      "path": "schemas/manifest.schema.json",
+      "bytes": 972,
+      "sha256": "6ffed6ae354a12685d54cdec57e5df0d8dfc4217d1da0cf87b3bebf837e2c520"
+    },
+    {
+      "path": "schemas/project-profile.schema.json",
+      "bytes": 1379,
+      "sha256": "2ac335c81aabd2935bd4db6f21313e798cd9577a7e40652100d0cecae389c392"
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "bytes": 3185,
+      "sha256": "3d89c91f369aa8cc9110dbcb15f09f05206b907a621479cd235f748ffe1be63a"
+    },
+    {
+      "path": "scripts/validate_repository.py",
+      "bytes": 11263,
+      "sha256": "57ede713279960955a947a4f0d5b0c0ea4e9af010ad8a74d298e8d3a11f2ce71"
+    },
+    {
+      "path": "skills/platform-write-baijiahao/SKILL.md",
+      "bytes": 2586,
+      "sha256": "2ceb087f6593357eea7de660b2e56724f26560c123d0f3863328240b49b4d0b8"
+    },
+    {
+      "path": "skills/platform-write-baijiahao/agents/openai.yaml",
+      "bytes": 273,
+      "sha256": "324e14be8b1e5e294312e5be91ec3d10a398a4f71867b88b0aba85b7cacf1433"
+    },
+    {
+      "path": "skills/platform-write-bilibili/SKILL.md",
+      "bytes": 2631,
+      "sha256": "d21d1f89a2143abf7b54e0406e3ec438cc5bb11a5ec8f0ff67c4b4f174371890"
+    },
+    {
+      "path": "skills/platform-write-bilibili/agents/openai.yaml",
+      "bytes": 281,
+      "sha256": "94602eade5e88190f59e44f72243fe60f54730776b5f3f087274115f8c7af969"
+    },
+    {
+      "path": "skills/platform-write-channels/SKILL.md",
+      "bytes": 2605,
+      "sha256": "f3dadc68b46199e4b09d812e7993eb2a517b82143b7458e0db247dd2875549c6"
+    },
+    {
+      "path": "skills/platform-write-channels/agents/openai.yaml",
+      "bytes": 272,
+      "sha256": "f44e44ed440e1a9e4f5b300ecb1e1b51874782984c1b8ee0782bd2cc3db05ddc"
+    },
+    {
+      "path": "skills/platform-write-csdn/SKILL.md",
+      "bytes": 2629,
+      "sha256": "f3273d4bc18e9f1981f458aa3764a9e421b8cdf3edbfd06b886c226155769fcd"
+    },
+    {
+      "path": "skills/platform-write-csdn/agents/openai.yaml",
+      "bytes": 253,
+      "sha256": "8dd512e35ff0adc6703dd2a77426dd424dfe43a380c205d9e37e39dd3db0c815"
+    },
+    {
+      "path": "skills/platform-write-dayu/SKILL.md",
+      "bytes": 2672,
+      "sha256": "0b95b23133ac6f5695abb14314a587659762736e5a904aa594e3c90e5172be2d"
+    },
+    {
+      "path": "skills/platform-write-dayu/agents/openai.yaml",
+      "bytes": 268,
+      "sha256": "0defcf9ba4cf071d885fc17cf0862b0a2cc98b71395f7b42f0a30263e4eff55f"
+    },
+    {
+      "path": "skills/platform-write-douyin/SKILL.md",
+      "bytes": 2646,
+      "sha256": "b6b65e337583336cc1c5c20b19ceb8ce202fedc7b637dcdd57868b02e9fec54c"
+    },
+    {
+      "path": "skills/platform-write-douyin/agents/openai.yaml",
+      "bytes": 261,
+      "sha256": "b4fc531045aef652c9f9339859871b444e18e15cf996c19dce5d227b6035c9d8"
+    },
+    {
+      "path": "skills/platform-write-kuaishou/SKILL.md",
+      "bytes": 2589,
+      "sha256": "0d850c39efe7640b44bb4ffd654f80b0667cb20cc61226a7f3dd29840680e963"
+    },
+    {
+      "path": "skills/platform-write-kuaishou/agents/openai.yaml",
+      "bytes": 263,
+      "sha256": "3dfd0ceac184378e310aff30871577b007147ea8528867928985e290c4c1bfa1"
+    },
+    {
+      "path": "skills/platform-write-netease/SKILL.md",
+      "bytes": 2555,
+      "sha256": "275b56ad31a17374c2b77f7488ea7a50a847cd385174ef8431a29cce5b04cfcf"
+    },
+    {
+      "path": "skills/platform-write-netease/agents/openai.yaml",
+      "bytes": 271,
+      "sha256": "9c5f1989f443de5e67e7365144d1b20bfd4751c4f103eb9bac05b24113137a9b"
+    },
+    {
+      "path": "skills/platform-write-qq-media/SKILL.md",
+      "bytes": 2561,
+      "sha256": "fe901799c20a592f4a77d60e9b59b6ff18247eab64af23e7f3438e7976b39e97"
+    },
+    {
+      "path": "skills/platform-write-qq-media/agents/openai.yaml",
+      "bytes": 272,
+      "sha256": "3d6a7b80b42fdccdfb6d4ee844fb37220c29b2698c270c4051f98566c4210919"
+    },
+    {
+      "path": "skills/platform-write-sohu/SKILL.md",
+      "bytes": 2545,
+      "sha256": "ed18e18d81b4749e499cadde2bbbf285a3515f8e5c913d5c9755ccbc76090fa4"
+    },
+    {
+      "path": "skills/platform-write-sohu/agents/openai.yaml",
+      "bytes": 268,
+      "sha256": "61a049eacb6ce4738037a991c5e2f637895044a431ed27b40f44a1ae36f02ffd"
+    },
+    {
+      "path": "skills/platform-write-toutiao/SKILL.md",
+      "bytes": 2593,
+      "sha256": "22d5298874a5aebb6309e407919b31c4f5a49134010a297533ea09fb0c9018b1"
+    },
+    {
+      "path": "skills/platform-write-toutiao/agents/openai.yaml",
+      "bytes": 271,
+      "sha256": "141446a60ab66319f3dcf1eea49eb824770444faa24b8ebc4ddd8938d6f9e1d2"
+    },
+    {
+      "path": "skills/platform-write-website/SKILL.md",
+      "bytes": 2779,
+      "sha256": "e4f988423846898637b0b90a87aa9fe894e2a4ce81d8b556b37b3aceecc0c100"
+    },
+    {
+      "path": "skills/platform-write-website/agents/openai.yaml",
+      "bytes": 289,
+      "sha256": "911942f3741d27e9c89532f680e7eafe967302799394f698997e1609f7cae3f9"
+    },
+    {
+      "path": "skills/platform-write-wechat/SKILL.md",
+      "bytes": 2765,
+      "sha256": "c323ab37a28c202a9ed81a80ac36af539ac8d75cb8157c3f15894e94137c2c31"
+    },
+    {
+      "path": "skills/platform-write-wechat/agents/openai.yaml",
+      "bytes": 288,
+      "sha256": "ad4cee31e4a47bab386d4ac14b3b8e90de2b282468ff97beb0722d447f4734f1"
+    },
+    {
+      "path": "skills/platform-write-weibo/SKILL.md",
+      "bytes": 2576,
+      "sha256": "7228cc7b1948665056c99b52449013f4ad4d0c551318c1491b7c7c517c3f948f"
+    },
+    {
+      "path": "skills/platform-write-weibo/agents/openai.yaml",
+      "bytes": 260,
+      "sha256": "c07eaddc8e4fcaf42ab62ff2c39104fdb0d4bff960a5e4fa1ed3b47d13e609e8"
+    },
+    {
+      "path": "skills/platform-write-xiaohongshu/SKILL.md",
+      "bytes": 2688,
+      "sha256": "a0558adb50fab06c2dc49316e28e5952c21dc9e626e40c407ae2fcca48782ae8"
+    },
+    {
+      "path": "skills/platform-write-xiaohongshu/agents/openai.yaml",
+      "bytes": 275,
+      "sha256": "7ed989034067af0290af5bde34e201fbf47b0412f2b9060fa83dbf7091907720"
+    },
+    {
+      "path": "skills/platform-write-zhihu/SKILL.md",
+      "bytes": 2616,
+      "sha256": "2dce1f723896c279feec189b7106daee27a84aab0f4b25a7d50d1d02e9e2e1b2"
+    },
+    {
+      "path": "skills/platform-write-zhihu/agents/openai.yaml",
+      "bytes": 260,
+      "sha256": "b4cd3adf87680e03e8d6387570c952d0675ad0b682f92c268b1ecce9df6d3e54"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/SKILL.md",
+      "bytes": 2388,
+      "sha256": "0816596ddd19d91e24cc049ab28957a5ae24f985dee74f854f3d9533919380ab"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/agents/openai.yaml",
+      "bytes": 287,
+      "sha256": "bc33cd82e68742ffd66e225bbb58acf4dadfe67087d84dc459eaa19c9de91f17"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/references/case-sandblasting.md",
+      "bytes": 743,
+      "sha256": "6ffa2077dc40a674dc2301f08b770176013e4b92c5429c65b227bba17f2cb927"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/references/editorial-core.md",
+      "bytes": 2918,
+      "sha256": "4169b07d8f88164ddcfead9590d87e38a975c8abebb2540c8bcded1f0cdcfa4b"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/references/output-contract.md",
+      "bytes": 2295,
+      "sha256": "81982e9b6f758f540d9616e5ac4e19ac84aeb73b51d3ac9b9101b5853b1ad36c"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/references/platform-routing.md",
+      "bytes": 1292,
+      "sha256": "0a7deedf33bd1f112e111803f89fec8417f7c6091a72f749c1649ce08a79c176"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/references/policy-evidence.md",
+      "bytes": 910,
+      "sha256": "aad042e585c23e4c0e0da80414fb9e0833903b2a79dafa3bf336b0b9d75ad9c6"
+    },
+    {
+      "path": "skills/platform-writing-orchestrator/references/source-adaptation.md",
+      "bytes": 625,
+      "sha256": "79b43855dc5057387db16ef8ab33e07d1c1e27d07278c2ce1fc5d10afbd91194"
+    },
+    {
+      "path": "tests/test_validator.py",
+      "bytes": 1224,
+      "sha256": "533ead5dd6b0699e4d0978559513d445b549f93f794af6951abae11c43f57e1c"
+    }
+  ]
+}
