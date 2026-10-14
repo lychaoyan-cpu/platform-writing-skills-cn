@@ -32,6 +32,8 @@ REQUIRED_FILES = {
     "schemas/project-profile.schema.json",
     "schemas/fact-packet.schema.json",
     "docs/releases/v1.0.0.md",
+    "docs/releases/v1.1.0.md",
+    "scripts/validate_fact_packet.py",
 }
 TEXT_SUFFIXES = {".md", ".txt", ".json", ".yaml", ".yml", ".py", ".toml", ".ini", ".cfg", ".svg"}
 SKILL_NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,62}[a-z0-9]$|^[a-z0-9]$")

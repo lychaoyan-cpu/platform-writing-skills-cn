@@ -101,6 +101,16 @@ python scripts/validate_repository.py
 
 GitHub Actions 会在 push 和 pull request 时执行相同检查。
 
+## 事实包校验
+
+写作任务开始前，可用仓库自带脚本按 `schemas/fact-packet.schema.json` 校验事实包（只用 Python 标准库）：
+
+```bash
+python scripts/validate_fact_packet.py path/to/fact-packet.json
+```
+
+不带参数时校验自带示例。除 Schema 本身外，还会拒绝同一事实包内重复的 `fact_id` 和同一条事实内重复的 `source_id`。有效与无效事实包的回归夹具在 `tests/fixtures/`。
+
 ## 扩展新平台
 
 1. 从现有平台 Skill 的结构开始，但重新写平台特有组织方式。
@@ -114,7 +124,7 @@ GitHub Actions 会在 push 和 pull request 时执行相同检查。
 ## Roadmap
 
 - 增加面向真实任务的行为回归夹具，而不是只匹配固定措辞。
-- 提供可选的事实包与输出契约 JSON 校验命令。
+- 提供可选的输出契约 JSON 校验命令。
 - 增加更多平台字段适配，同时保持写作与发布分离。
 - 持续更新安全规则并减少误报。
 

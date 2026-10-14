@@ -1,6 +1,6 @@
 {
   "project": "platform-writing-skills-cn",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "orchestrator": "platform-writing-orchestrator",
   "source_release": {

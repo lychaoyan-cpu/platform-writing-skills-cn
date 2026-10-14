@@ -62,6 +62,16 @@ python scripts/validate_repository.py
 
 The validator checks required declarations, skill frontmatter, manifest completeness, SHA-256, duplicate content, disallowed machine-local paths, and high-confidence secret patterns. GitHub Actions runs the same check for pushes and pull requests.
 
+## Validate a fact packet
+
+Fact packets can be checked against `schemas/fact-packet.schema.json` before a writing task starts (standard library only):
+
+```bash
+python scripts/validate_fact_packet.py path/to/fact-packet.json
+```
+
+With no argument it validates the bundled example. Beyond the schema, it rejects duplicate `fact_id` values within a packet and duplicate `source_id` values within a fact. Regression fixtures for valid and invalid packets live in `tests/fixtures/`.
+
 ## Add a platform
 
 Create a `platform-write-<id>` skill, add UI metadata, register it in `config/platforms.json` and the orchestrator routing table, then rebuild and validate the manifest. Do not present editorial preferences as official platform rules. See [docs/adding-platform.md](docs/adding-platform.md).
@@ -69,7 +79,7 @@ Create a `platform-write-<id>` skill, add UI metadata, register it in `config/pl
 ## Roadmap
 
 - Add behavioral regression fixtures for realistic writing tasks.
-- Add optional fact-packet and output-contract validation commands.
+- Add optional output-contract validation commands.
 - Extend platform field adapters while keeping publishing out of scope.
 - Improve security checks while controlling false positives.
 

@@ -6,8 +6,20 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Planned
 
-- Behavioral regression fixtures for realistic multi-platform tasks.
-- Optional validation for fact packets and output contracts.
+- Behavioral regression fixtures for realistic multi-platform writing tasks.
+- Optional validation for output contracts.
+
+## [1.1.0] - 2026-10-14
+
+### Added
+
+- `scripts/validate_fact_packet.py`: standard-library-only validation of fact packets against `schemas/fact-packet.schema.json`, plus duplicate `fact_id` / `source_id` integrity checks.
+- Regression fixtures under `tests/fixtures/` and seven new unit tests (suite grows from 4 to 11 tests).
+- GitHub issue templates (bug report, feature request, platform skill request) and a pull request template aligned with the repository checks.
+
+### Changed
+
+- Repository validator now also requires the v1.1.0 release notes and the fact-packet validator.
 
 ## [1.0.0] - 2026-09-16
 

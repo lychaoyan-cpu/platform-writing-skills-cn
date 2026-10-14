@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "platform-writing-skills-cn",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "skill_count": 17,
   "platform_count": 16,
@@ -117,12 +117,32 @@
       "path": "skills/platform-writing-orchestrator"
     }
   ],
-  "file_count": 66,
+  "file_count": 76,
   "files": [
     {
       "path": ".gitattributes",
       "bytes": 87,
       "sha256": "6cf073ee8c7878bfa005964f40a979a5ce09301322c051c08e5419e0344f8411"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "bytes": 544,
+      "sha256": "3136426257f8d40ebe2f30da502e41b21bdc78d5d3ad00fa0196a0b56fcc8d78"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "bytes": 573,
+      "sha256": "1d9a081d726c07555d57da91533126b4bf1ca638261fb45a7a614e537b126aae"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/platform_skill_request.md",
+      "bytes": 570,
+      "sha256": "44c04c495a954c6befd243aefcc26df7ae4217fa3cb2b8bbb97572a917531a30"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 721,
+      "sha256": "2f8eecd82e6431b615b7fb3a212706b5979a5adf8a2adb045d5a5e66bfdfed49"
     },
     {
       "path": ".github/workflows/validate.yml",
@@ -136,8 +156,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1294,
-      "sha256": "9aa73eb0c0b93ebaf594e3610d1c48c182f47955d9cd7fe6cde444517fdd8d16"
+      "bytes": 1867,
+      "sha256": "a7cd7baf6a2943b36d99db2cfaa338d31c81f0c537b61b3b74a0a7618eeb045e"
     },
     {
       "path": "CODE_OF_CONDUCT.md",
@@ -156,13 +176,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4105,
-      "sha256": "fb53604d117261b09c09ef34f43795b312fde226b734251568a6ae22dbf6d03c"
+      "bytes": 4568,
+      "sha256": "992485aba1769ae88507b4d07633ce053973bd8fd7d4ddb3ab3842234a157b7b"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 5711,
-      "sha256": "7b62b5411b867b9c1ed0d1e9a167ef1c01aa3c947fc8cbcfcb3765dd8b3ad373"
+      "bytes": 6150,
+      "sha256": "cd5d1ad08a464512772e014ea18f1fa208ecd39be301d6cc8843425b934824b6"
     },
     {
       "path": "SECURITY.md",
@@ -177,7 +197,7 @@
     {
       "path": "config/repository.json",
       "bytes": 465,
-      "sha256": "dab27c75dd7b7656668007707388bea263aa880bd3860505a606bac0e2f6bc21"
+      "sha256": "a6e54d757a286a0fe8d4dcfe4c7bd19c709984a1e78b4430338a6205dd6e06b8"
     },
     {
       "path": "docs/adding-platform.md",
@@ -198,6 +218,11 @@
       "path": "docs/releases/v1.0.0.md",
       "bytes": 1347,
       "sha256": "22bb4dcc0e86f2548f98e72cf3b37d1e32d6e238381719a9649684112ae9a329"
+    },
+    {
+      "path": "docs/releases/v1.1.0.md",
+      "bytes": 1322,
+      "sha256": "87f412f69ac242781b06b629b2a587b85b90fbae36d82a6621462c2f57433569"
     },
     {
       "path": "docs/security-audit.md",
@@ -240,9 +265,14 @@
       "sha256": "3d89c91f369aa8cc9110dbcb15f09f05206b907a621479cd235f748ffe1be63a"
     },
     {
+      "path": "scripts/validate_fact_packet.py",
+      "bytes": 6686,
+      "sha256": "11eb6e2322d849e78d9ca30978a142e1bd6de1bd7bb624264eb4275d190adac4"
+    },
+    {
       "path": "scripts/validate_repository.py",
-      "bytes": 11263,
-      "sha256": "57ede713279960955a947a4f0d5b0c0ea4e9af010ad8a74d298e8d3a11f2ce71"
+      "bytes": 11333,
+      "sha256": "30c198ed1475d9f71b326b185a863b5eab03a51ceeb559f0ce8859504d85a633"
     },
     {
       "path": "skills/platform-write-baijiahao/SKILL.md",
@@ -443,6 +473,26 @@
       "path": "skills/platform-writing-orchestrator/references/source-adaptation.md",
       "bytes": 625,
       "sha256": "79b43855dc5057387db16ef8ab33e07d1c1e27d07278c2ce1fc5d10afbd91194"
+    },
+    {
+      "path": "tests/fixtures/fact-packet.duplicate-fact-id.json",
+      "bytes": 757,
+      "sha256": "dc773839a9c32f23337019a04af3847f4894a06e5cf66e177caa03a3a8f791e1"
+    },
+    {
+      "path": "tests/fixtures/fact-packet.invalid-enum.json",
+      "bytes": 455,
+      "sha256": "659dfb965babe0c137150a862c41fb808c29295da90f69050ec4821345f821e1"
+    },
+    {
+      "path": "tests/fixtures/fact-packet.valid.json",
+      "bytes": 787,
+      "sha256": "7fa4d99f7ce1c0c868a851747d7e7a5ce95498390fd059e9106a2655939c2a94"
+    },
+    {
+      "path": "tests/test_fact_packet_validator.py",
+      "bytes": 2600,
+      "sha256": "c652bc8e9ecb9af0ca2efca90efce6dd05fc94050782cd4e828f7ec9b3f58e7d"
     },
     {
       "path": "tests/test_validator.py",
