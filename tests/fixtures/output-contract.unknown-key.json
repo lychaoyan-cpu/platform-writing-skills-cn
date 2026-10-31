@@ -1,0 +1,69 @@
+{
+  "account_context": "synthetic-fixture-account",
+  "ai_creation_mode": "AI_ASSISTED_DRAFT",
+  "article_id": "fixture-unknown-key-001",
+  "body": "Synthetic fixture body for a WeChat article about packing a sample widget. The failure modes this fixture guards are structural, not wording-based.",
+  "brand_mentions": [
+    {
+      "commercial_relationship": "none",
+      "evidence_id": null,
+      "reader_value": "Explains which box the synthetic widget ships in.",
+      "role": "example",
+      "text": "sample widget"
+    }
+  ],
+  "cards_or_script": null,
+  "checks": [
+    {
+      "evidence": "tests/fixtures/output-contract.valid.json",
+      "reason": null,
+      "result": "PASS",
+      "scope": "fact-grounding"
+    },
+    {
+      "evidence": null,
+      "reason": "Check not executed for this fixture.",
+      "result": "UNKNOWN",
+      "scope": "duplicate-content"
+    }
+  ],
+  "commercial_disclosure": "Synthetic fixture: no commercial relationship.",
+  "content_stage": "ADAPTED",
+  "decision": "REVIEW",
+  "fact_ids_used": [
+    "FACT-FIXTURE-001",
+    "FACT-FIXTURE-002"
+  ],
+  "fact_packet_id": "fixture-valid-001",
+  "final_content_hash": "synthetic-final-hash-fixture-001",
+  "format": "html",
+  "media_requirements": [
+    "one cover image"
+  ],
+  "optional_faq": "Synthetic fixture FAQ placeholder.",
+  "originality_status": "ORIGINAL_DRAFT",
+  "platform_id": "wechat",
+  "published": false,
+  "rule_evidence_status": "PARTIAL",
+  "rule_version": "fixture-rules-1",
+  "runtime_integration_verified": false,
+  "skill_name": "platform-write-wechat",
+  "skill_version": "1.2.0",
+  "source_draft_hash": "synthetic-draft-hash-fixture-001",
+  "source_records": [
+    {
+      "accessed_at": "2026-09-02",
+      "evidence_status": "USER_PROVIDED",
+      "published_at": null,
+      "supported_claims": [
+        "packaging"
+      ],
+      "title": "Synthetic fixture packing note",
+      "url": null
+    }
+  ],
+  "summary": "Synthetic fixture summary for the valid output-contract case.",
+  "title": "Synthetic fixture: unknown key case",
+  "writer_model": "fixture-model",
+  "surprise_key": "not in the schema"
+}

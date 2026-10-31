@@ -66,9 +66,11 @@ Copy-Item -Recurse platform-writing-skills-cn/skills/platform-write-zhihu $env:C
 
 - `schemas/project-profile.schema.json`：组织、品牌、禁用表达和内容边界。
 - `schemas/fact-packet.schema.json`：断言、来源、证据等级和公开状态。
+- `schemas/output-contract.schema.json`：程序记录形式的输出契约字段、枚举与平台登记。
 - `schemas/manifest.schema.json`：仓库清单结构。
 - `examples/project-profile.example.yaml`：只含变量的配置模板。
 - `examples/fact-packet.example.json`：明确标记为合成数据的事实包。
+- `examples/output-contract.example.json`：明确标记为合成数据的输出契约记录。
 - `examples/request.example.md`：可复制的 Agent 请求。
 
 示例不代表真实企业、客户、价格、性能或检测结果。
@@ -111,6 +113,16 @@ python scripts/validate_fact_packet.py path/to/fact-packet.json
 
 不带参数时校验自带示例。除 Schema 本身外，还会拒绝同一事实包内重复的 `fact_id` 和同一条事实内重复的 `source_id`。有效与无效事实包的回归夹具在 `tests/fixtures/`。
 
+## 输出契约校验
+
+程序记录形式的输出契约可用仓库自带脚本按 `schemas/output-contract.schema.json` 校验（只用 Python 标准库）：
+
+```bash
+python scripts/validate_output_contract.py path/to/output-contract.json
+```
+
+不带参数时校验 `examples/` 中的自带示例。除 Schema 本身外，还会按 `config/platforms.json` 解析 `platform_id`、要求 `skill_name` 与该平台登记的 Skill 一致，并拒绝重复的 `fact_ids_used` 条目和未知字段。回归夹具在 `tests/fixtures/`。
+
 ## 扩展新平台
 
 1. 从现有平台 Skill 的结构开始，但重新写平台特有组织方式。
@@ -124,7 +136,6 @@ python scripts/validate_fact_packet.py path/to/fact-packet.json
 ## Roadmap
 
 - 增加面向真实任务的行为回归夹具，而不是只匹配固定措辞。
-- 提供可选的输出契约 JSON 校验命令。
 - 增加更多平台字段适配，同时保持写作与发布分离。
 - 持续更新安全规则并减少误报。
 

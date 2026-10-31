@@ -7,7 +7,17 @@ All notable changes to this project will be documented in this file. The format 
 ### Planned
 
 - Behavioral regression fixtures for realistic multi-platform writing tasks.
-- Optional validation for output contracts.
+
+## [1.2.0] - 2026-10-31
+
+### Added
+
+- `scripts/validate_output_contract.py`: standard-library-only validation of recorded output-contract JSON against `schemas/output-contract.schema.json`, plus platform resolution against `config/platforms.json` (unknown platform ids and skill mismatches are rejected), duplicate `fact_ids_used` checks, and rejection of unknown keys.
+- Synthetic example `examples/output-contract.example.json`, regression fixtures under `tests/fixtures/`, and nine new unit tests (suite grows from 11 to 20 tests).
+
+### Changed
+
+- Repository validator now also requires the v1.2.0 release notes, the output-contract validator, and its schema.
 
 ## [1.1.0] - 2026-10-14
 

@@ -72,6 +72,16 @@ python scripts/validate_fact_packet.py path/to/fact-packet.json
 
 With no argument it validates the bundled example. Beyond the schema, it rejects duplicate `fact_id` values within a packet and duplicate `source_id` values within a fact. Regression fixtures for valid and invalid packets live in `tests/fixtures/`.
 
+## Validate an output contract
+
+A recorded programmatic output record can be checked against `schemas/output-contract.schema.json` — the JSON form of the orchestrator's output contract — before it is handed off (standard library only):
+
+```bash
+python scripts/validate_output_contract.py path/to/output-contract.json
+```
+
+With no argument it validates the bundled example in `examples/`. Beyond the schema, it resolves `platform_id` against `config/platforms.json`, requires `skill_name` to be the skill registered for that platform, and rejects duplicate `fact_ids_used` entries and unknown keys. Regression fixtures live in `tests/fixtures/`.
+
 ## Add a platform
 
 Create a `platform-write-<id>` skill, add UI metadata, register it in `config/platforms.json` and the orchestrator routing table, then rebuild and validate the manifest. Do not present editorial preferences as official platform rules. See [docs/adding-platform.md](docs/adding-platform.md).
@@ -79,7 +89,6 @@ Create a `platform-write-<id>` skill, add UI metadata, register it in `config/pl
 ## Roadmap
 
 - Add behavioral regression fixtures for realistic writing tasks.
-- Add optional output-contract validation commands.
 - Extend platform field adapters while keeping publishing out of scope.
 - Improve security checks while controlling false positives.
 

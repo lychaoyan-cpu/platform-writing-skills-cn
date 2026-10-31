@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "platform-writing-skills-cn",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "skill_count": 17,
   "platform_count": 16,
@@ -117,7 +117,7 @@
       "path": "skills/platform-writing-orchestrator"
     }
   ],
-  "file_count": 76,
+  "file_count": 84,
   "files": [
     {
       "path": ".gitattributes",
@@ -156,8 +156,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1867,
-      "sha256": "a7cd7baf6a2943b36d99db2cfaa338d31c81f0c537b61b3b74a0a7618eeb045e"
+      "bytes": 2487,
+      "sha256": "f3209cd42c654eef0f1071cfd251e0f000d3a6ef280c0fd97b52f34f8a9f5e8f"
     },
     {
       "path": "CODE_OF_CONDUCT.md",
@@ -176,13 +176,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4568,
-      "sha256": "992485aba1769ae88507b4d07633ce053973bd8fd7d4ddb3ab3842234a157b7b"
+      "bytes": 5166,
+      "sha256": "165852559631d5f69df818fdb34fef26baa9f62c833059adb6d44942441970cc"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 6150,
-      "sha256": "cd5d1ad08a464512772e014ea18f1fa208ecd39be301d6cc8843425b934824b6"
+      "bytes": 6840,
+      "sha256": "ffbe64274537a371894c71381de44993201b52681b56892cebef336e9f703fc7"
     },
     {
       "path": "SECURITY.md",
@@ -197,7 +197,7 @@
     {
       "path": "config/repository.json",
       "bytes": 465,
-      "sha256": "a6e54d757a286a0fe8d4dcfe4c7bd19c709984a1e78b4430338a6205dd6e06b8"
+      "sha256": "31c371ffb7beb3bb3e22d2e4d552a330c51aa85a55a975f12204aaa010060895"
     },
     {
       "path": "docs/adding-platform.md",
@@ -225,6 +225,11 @@
       "sha256": "87f412f69ac242781b06b629b2a587b85b90fbae36d82a6621462c2f57433569"
     },
     {
+      "path": "docs/releases/v1.2.0.md",
+      "bytes": 1692,
+      "sha256": "f36d7ec1bc082d5a111c05ca07179a493f4157f45aab43ee1f1209b07cf6d10a"
+    },
+    {
       "path": "docs/security-audit.md",
       "bytes": 2040,
       "sha256": "4c799a29eb558abd1453a94eca03cdc7be4f6c2aa7c8e182af474e4b6507f5bc"
@@ -233,6 +238,11 @@
       "path": "examples/fact-packet.example.json",
       "bytes": 561,
       "sha256": "39ea9fa84a4d42833561abda399a3882d894ed1abe3646400c49a2f2077cb564"
+    },
+    {
+      "path": "examples/output-contract.example.json",
+      "bytes": 1527,
+      "sha256": "f7db69464e2dc9587d286a439f2a3f7154ad76ba3d54c8985abce1f9aa74f525"
     },
     {
       "path": "examples/project-profile.example.yaml",
@@ -255,6 +265,11 @@
       "sha256": "6ffed6ae354a12685d54cdec57e5df0d8dfc4217d1da0cf87b3bebf837e2c520"
     },
     {
+      "path": "schemas/output-contract.schema.json",
+      "bytes": 3059,
+      "sha256": "581bdd0ce696af94778f88ba9ff371b5a213dc3ada9d530018dece5b62995818"
+    },
+    {
       "path": "schemas/project-profile.schema.json",
       "bytes": 1379,
       "sha256": "2ac335c81aabd2935bd4db6f21313e798cd9577a7e40652100d0cecae389c392"
@@ -270,9 +285,14 @@
       "sha256": "11eb6e2322d849e78d9ca30978a142e1bd6de1bd7bb624264eb4275d190adac4"
     },
     {
+      "path": "scripts/validate_output_contract.py",
+      "bytes": 4119,
+      "sha256": "77e5e915e2d2986933cfdc46faac05e49cf13065d921732b1b0ba23c08371351"
+    },
+    {
       "path": "scripts/validate_repository.py",
-      "bytes": 11333,
-      "sha256": "30c198ed1475d9f71b326b185a863b5eab03a51ceeb559f0ce8859504d85a633"
+      "bytes": 11450,
+      "sha256": "5458d5d20f1a788f8630cf3800ff4a22a9ac65b13bcd62ef522e297754d35fd2"
     },
     {
       "path": "skills/platform-write-baijiahao/SKILL.md",
@@ -490,9 +510,29 @@
       "sha256": "7fa4d99f7ce1c0c868a851747d7e7a5ce95498390fd059e9106a2655939c2a94"
     },
     {
+      "path": "tests/fixtures/output-contract.unknown-key.json",
+      "bytes": 2129,
+      "sha256": "69867052a8175990ed3be2edf3298b8fcf4b8555e3d1aafcec4f19a55666fdd5"
+    },
+    {
+      "path": "tests/fixtures/output-contract.unknown-platform.json",
+      "bytes": 2108,
+      "sha256": "fe62703c1e9ad6b57c73f01eb45a0030b70bcc5231055996a284e03e81382c30"
+    },
+    {
+      "path": "tests/fixtures/output-contract.valid.json",
+      "bytes": 1746,
+      "sha256": "96861ac1fbe53461a418e2f24b90fed91104bd7ba591ce70ba2876c48c2225e6"
+    },
+    {
       "path": "tests/test_fact_packet_validator.py",
       "bytes": 2600,
       "sha256": "c652bc8e9ecb9af0ca2efca90efce6dd05fc94050782cd4e828f7ec9b3f58e7d"
+    },
+    {
+      "path": "tests/test_output_contract_validator.py",
+      "bytes": 3205,
+      "sha256": "396ee013e80aaeff90d265eb2d69a661d9665a762e8c3474b28540b3cce9c7ac"
     },
     {
       "path": "tests/test_validator.py",
