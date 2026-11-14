@@ -82,13 +82,22 @@ python scripts/validate_output_contract.py path/to/output-contract.json
 
 With no argument it validates the bundled example in `examples/`. Beyond the schema, it resolves `platform_id` against `config/platforms.json`, requires `skill_name` to be the skill registered for that platform, and rejects duplicate `fact_ids_used` entries and unknown keys. Regression fixtures live in `tests/fixtures/`.
 
+## Check a behavioral fixture
+
+A scenario bundles one synthetic fact packet, one synthetic project profile, the expected routing decision, and one draft record per target platform (standard library only):
+
+```bash
+python scripts/check_behavioral_fixture.py path/to/scenario.json
+```
+
+With no argument it checks the bundled scenario in `tests/fixtures/`. The checker validates the packet and drafts with the repository's own validators, then asserts structural properties — routing coverage, fact-id grounding, unknown facts staying unknown, no promotional tail, preserved evidence status, and unexecuted checks staying UNKNOWN — instead of matching fixed wording. Every failure names the property that broke.
+
 ## Add a platform
 
 Create a `platform-write-<id>` skill, add UI metadata, register it in `config/platforms.json` and the orchestrator routing table, then rebuild and validate the manifest. Do not present editorial preferences as official platform rules. See [docs/adding-platform.md](docs/adding-platform.md).
 
 ## Roadmap
 
-- Add behavioral regression fixtures for realistic writing tasks.
 - Extend platform field adapters while keeping publishing out of scope.
 - Improve security checks while controlling false positives.
 

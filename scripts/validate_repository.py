@@ -34,6 +34,8 @@ REQUIRED_FILES = {
     "docs/releases/v1.0.0.md",
     "docs/releases/v1.1.0.md",
     "docs/releases/v1.2.0.md",
+    "docs/releases/v1.3.0.md",
+    "scripts/check_behavioral_fixture.py",
     "scripts/validate_fact_packet.py",
     "scripts/validate_output_contract.py",
     "schemas/output-contract.schema.json",

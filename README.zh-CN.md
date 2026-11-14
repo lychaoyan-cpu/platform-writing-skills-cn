@@ -123,6 +123,16 @@ python scripts/validate_output_contract.py path/to/output-contract.json
 
 不带参数时校验 `examples/` 中的自带示例。除 Schema 本身外，还会按 `config/platforms.json` 解析 `platform_id`、要求 `skill_name` 与该平台登记的 Skill 一致，并拒绝重复的 `fact_ids_used` 条目和未知字段。回归夹具在 `tests/fixtures/`。
 
+## 行为夹具检查
+
+一个场景包含一份合成事实包、一份合成项目画像、预期的路由决策和每个目标平台的一份草稿记录（只用 Python 标准库）：
+
+```bash
+python scripts/check_behavioral_fixture.py path/to/scenario.json
+```
+
+不带参数时检查 `tests/fixtures/` 中的自带场景。检查器先用仓库自带的校验器校验事实包与草稿，再断言草稿必须保持的结构属性——路由覆盖、事实编号有据、未知事实不写成定数、无推广收尾、证据状态不被改写、未执行的检查保持 UNKNOWN——而不是比对固定措辞。每次失败都会点名坏掉的属性。
+
 ## 扩展新平台
 
 1. 从现有平台 Skill 的结构开始，但重新写平台特有组织方式。
@@ -135,7 +145,6 @@ python scripts/validate_output_contract.py path/to/output-contract.json
 
 ## Roadmap
 
-- 增加面向真实任务的行为回归夹具，而不是只匹配固定措辞。
 - 增加更多平台字段适配，同时保持写作与发布分离。
 - 持续更新安全规则并减少误报。
 
